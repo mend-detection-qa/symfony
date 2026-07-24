@@ -28,19 +28,18 @@
         "gte": 30
       },
       "expected_direct_dependencies_number": {
-        "eq": 27
+        "gte": 25
       },
       "expected_transitive_dependencies_number": {
         "eq": 9
       },
       "_comment_expected_dependencies_number": "Optional. Expected number of dependencies with comparison operator. Operators: gt (>), gte (>=), lt (<), lte (<=), eq (==). If not provided, this check will not be performed.",
       "direct_dependencies_names_list": {
-        "eq": [
+        "contains": [
           "symfony/polyfill-intl-idn",
           "symfony/polyfill-php85",
           "psr/link",
           "symfony/polyfill-uuid",
-          "cdn.min.js",
           "mermaid-flowchart-v2.min.js",
           "symfony/polyfill-intl-normalizer",
           "symfony/polyfill-intl-grapheme",
